@@ -22,6 +22,12 @@ services:
       - .:/var/www/html
     depends_on:
       - database
+    
+  # Service MySQL
+  gth3-mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: GTH3
 
 volumes:
   database_data:
