@@ -1,16 +1,6 @@
 version: '3'
 
 services:
-  ###> doctrine/doctrine-bundle ###
-  database:
-    image: postgres:${POSTGRES_VERSION:-15}-alpine
-    environment:
-      POSTGRES_DB: ${POSTGRES_DB:-app}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-!ChangeMe!}
-      POSTGRES_USER: ${POSTGRES_USER:-app}
-    volumes:
-      - database_data:/var/lib/postgresql/data:rw
-
   # Service Symfony
   symfony:
     build:
@@ -24,9 +14,10 @@ services:
       - database
     
   # Service MySQL
-  gth3-mysql:
+  mysql-gth3:
     image: mysql:latest
     environment:
+      MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: GTH3
 
 volumes:
