@@ -13,17 +13,19 @@
 <div class="navbar-wrapper">
 <nav class="navbar navbar-dark bg-dark">
   <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent" style="padding-right: 20px;">
+  {#
     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-      {# Bouton pour utilisateur authentifié #}
+      
       <a class="btn btn-sm btn-custom ml-auto" href="#" role="button"><i class="bi bi-person-fill"></i> {{ app.user.name }}</a>
       <span class="mx-2"></span>
       <a class="btn btn-sm btn-danger ml-auto" href="{{ path('app_logout') }}" role="button"><i class="bi bi-box-arrow-right"></i></a>
     {% else %}
-      {# Boutons pour utilisateur non authentifié #}
+      
       <a class="btn btn-sm btn-custom ml-auto" href="{{ path('app_login') }}" role="button"><i class="bi bi-person-fill"></i> Connexion</a>
       <span class="mx-2"></span>
       <a class="btn btn-sm btn-custom ml-auto" href="{{ path('authentification') }}" role="button"><i class="bi bi-person-fill"></i> Inscription</a>
     {% endif %}
+    #}
   </div>
 </nav>
 
@@ -40,20 +42,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{ path('Jeux') }}">Jeux</a>
+          <a class="nav-link" href="#">Test</a>
         </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Joueurs
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ path('stats') }}">Statistiques</a>
+          <a class="dropdown-item" href="#">Statistiques</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{{ path('classement')}}">Classements</a>
+          <a class="dropdown-item" href="#">Classements</a>
         </div>
       </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://store.zenavia.net/" target="_blank">Boutique</a>
+          <a class="nav-link" href="#" target="_blank">Boutique</a>
         </li>
       </ul>
     </div>
