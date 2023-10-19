@@ -13,7 +13,7 @@
 <div class="navbar-wrapper">
 <nav class="navbar navbar-dark bg-dark">
   <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent" style="padding-right: 20px;">
-  {#
+  
     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
       
       <a class="btn btn-sm btn-custom ml-auto" href="#" role="button"><i class="bi bi-person-fill"></i> {{ app.user.name }}</a>
@@ -21,11 +21,11 @@
       <a class="btn btn-sm btn-danger ml-auto" href="{{ path('app_logout') }}" role="button"><i class="bi bi-box-arrow-right"></i></a>
     {% else %}
       
-      <a class="btn btn-sm btn-custom ml-auto" href="{{ path('app_login') }}" role="button"><i class="bi bi-person-fill"></i> Connexion</a>
+      <a class="btn btn-sm btn-custom ml-auto" href="#" role="button"><i class="bi bi-person-fill"></i> Connexion</a>
       <span class="mx-2"></span>
-      <a class="btn btn-sm btn-custom ml-auto" href="{{ path('authentification') }}" role="button"><i class="bi bi-person-fill"></i> Inscription</a>
+      <a class="btn btn-sm btn-custom ml-auto" href="#" role="button"><i class="bi bi-person-fill"></i> Inscription</a>
     {% endif %}
-    #}
+    
   </div>
 </nav>
 
