@@ -18,3 +18,15 @@ A l'avenir, le joueur pourra voir ses statistques, son nombre de victoires, de p
 ### Docker :
 Deux Dockerfile sont utilisés, un pour symfony (gth3) et l'autre pour la base de données (mysql-gth3).
 Docker permet d'orchestrer les conteneurs pour ainsi permette une configuration et un deploiement plus facile.
+
+---------------
+
+## Fonctionnement
+
+Le site fonctionne avec l'aide des utilisateurs, avec deux grades, l'un est adminisatrateur, l'autre est joueur.
+L'administateur possède des permissions supplémentaires, il peut organiser des courses et les supprimer (annuler).
+Le joueur peut rejoindre des courses, se retirer.
+L'ensemble des utilisateurs pourront à l'avenir consulter les stats, et aussi le classement précédent.
+
+Lors de la création d'une course, l'organisateur choisi la date, le circuit, le type de course (endurance, sprint, multiclasse), etc.
+
