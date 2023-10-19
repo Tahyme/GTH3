@@ -12,6 +12,9 @@ Symfony fournit des fonctionnalités qui offre un gain de temps pour créer un s
 On utilise MySQL pour gérer les utilisateurs, les courses qui arrivent, et aussi un histoirique des anciennes courses.
 A l'avenir, le joueur pourra voir ses statistques, son nombre de victoires, de poles position, de meilleurs temps au tour etc...
 
+![image](https://github.com/Tahyme/GTH3/assets/68480140/3355737e-b803-4f25-a8b8-422c7666dd59)
+
+
 ### Docker :
 Deux Dockerfile sont utilisés, un pour symfony (gth3) et l'autre pour la base de données (mysql-gth3).
 Docker permet d'orchestrer les conteneurs pour ainsi permette une configuration et un deploiement plus facile.
