@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Course Details</h1>
+
+    <p>Name: {{ course.name }}</p>
+    <p>Circuit: {{ course.circuit }}</p>
+    <p>Date and Time: {{ course.dateTime|date('Y-m-d H:i:s') }}</p>
+    <p>Participants: {{ course.participants }}</p>
+{% endblock %}
