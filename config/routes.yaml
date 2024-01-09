@@ -7,3 +7,11 @@ controllers:
 home:
     path: /
     controller: App\Controller\HomeController::index
+
+event_create:
+    path: /event/create
+    controller: App\Controller\EventController::create
+
+event_show:
+    path: /event/show/{id}
+    controller: App\Controller\EventController::show
