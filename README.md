@@ -14,6 +14,8 @@ A l'avenir, le joueur pourra voir ses statistques, son nombre de victoires, de p
 
 ![image](https://github.com/Tahyme/GTH3/assets/68480140/3355737e-b803-4f25-a8b8-422c7666dd59)
 
+![image](https://github.com/Tahyme/GTH3/assets/68480140/b7ef879b-7d16-4164-aab0-5ea60522cf63)
+
 
 ### Docker :
 Deux Dockerfile sont utilisés, un pour symfony (gth3) et l'autre pour la base de données (mysql-gth3).
