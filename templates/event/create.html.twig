@@ -9,14 +9,21 @@
                 {{ form_row(form.Nom, {'attr': {'class': 'form-control'}}) }}
             </div>
             <div class="form-group mt-4">
+                {{ form_row(form.Organisateur, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group mt-4">
                 {{ form_label(form.Circuit, 'Choisissez un circuit', {'label_attr': {'class': 'form-label'}}) }}
                 {{ form_widget(form.Circuit, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group mt-4">
+                {{ form_label(form.TypeCourse, 'Type de course', {'label_attr': {'class': 'form-label'}}) }}
+                {{ form_widget(form.TypeCourse, {'attr': {'class': 'form-control'}}) }}
             </div>
             <div class="form-group mt-4">
                 {{ form_row(form.Dateheure, {'attr': {'class': 'form-control'}}) }}
             </div>
             <div class="form-group mt-4">
-                {{ form_row(form.Participants, {'attr': {'class': 'form-control'}}) }}
+                {{ form_row(form.LimiteParticipant, {'attr': {'class': 'form-control'}}) }}
             </div>
             <div class="form-group mt-4">
                 <button type="submit" class="btn btn-primary">Create</button>

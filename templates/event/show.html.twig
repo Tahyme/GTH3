@@ -3,8 +3,8 @@
 {% block body %}
     <h1>Course Details</h1>
 
-    <p>Name: {{ course.name }}</p>
-    <p>Circuit: {{ course.circuit }}</p>
-    <p>Date and Time: {{ course.dateTime|date('Y-m-d H:i:s') }}</p>
-    <p>Participants: {{ course.participants }}</p>
+    <p>Name: {{ event.nom }}</p>
+    <p>Circuit: {{ event.circuit }}</p>
+    <p>Date and Time: {{ event.dateheure|date('Y-m-d H:i:s') }}</p>
+    <p>Participants: {{ event.participants }}</p>
 {% endblock %}

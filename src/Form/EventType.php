@@ -130,6 +130,15 @@ class EventType extends AbstractType
             'Willow Springs International Raceway - Streets of Willow Springs - Inversé',
         ];
 
+        $typecourse = [
+            'Endurance',
+            'Sprint',
+            'Grand Prix',
+            'Tournoi',
+            'Championnat',
+            'Dirty'
+        ];
+
         $builder
             ->add('Nom')
             //->add('Description')
@@ -138,12 +147,15 @@ class EventType extends AbstractType
                 'choices' => array_combine($circuits, $circuits),
                 'attr' => ['class' => 'form-control'],
             ])
-            //->add('Organisateur')
-            ->add('Participants')
+            ->add('Organisateur')
+            //->add('Participants')
             //->add('Statut')
-            //->add('TypeCourse')
-            //->add('Duree')
-            //->add('LimiteParticipant')
+            ->add('TypeCourse', ChoiceType::class, [
+                'choices' => array_combine($typecourse, $typecourse),
+                'attr' => ['class' => 'form-control'],
+            ])
+            ->add('Duree')
+            ->add('LimiteParticipant')
         ;
     }
 
