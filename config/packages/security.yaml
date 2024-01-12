@@ -1,7 +1,4 @@
 security:
-    encoders:
-        App\Entity\User:
-            algorithm: auto
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
@@ -15,12 +12,8 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: true
             lazy: true
             provider: app_user_provider
-            guard:
-                authenticators:
-                    - App\Security\LoginAuthenticator
             logout:
                 path: app_logout
                 # where to redirect after logout
